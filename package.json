@@ -5,8 +5,14 @@
   "author": "Dalci de Jesus Bagolin - dalcib@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "express": "~4.0.0",
-    "mongojs": "~0.7.1"
+    "express": "~4.16.0",
+    "mongojs": "~0.7.1",
+    "snyk": "^1.85.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
